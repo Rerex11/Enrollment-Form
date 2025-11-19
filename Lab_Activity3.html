@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>PCU ENROLLMENT FORM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>PCU College Enrollment</h1>  <!---->
+        <p class="subtile">Complete the registration form with attention to detail</p>
+
+        <fieldset><!--v -->
+            <legend>Personal Information</legend>
+            <label>Student Name:<input type="text" name="name"></label>
+            <label>Birth Date:<input type="date" name="birthdate"></label>
+            <label>Gender:
+                <input type="radio" name="gender" value="male"> Male
+                <input type="radio" name="gender" value="female"> Female
+            </label>
+            <br>
+            <label>Address:<input type="text" name="address" placeholder="Ex. 1648 Taft Ave. Cor. Pedro Gil St., Malate"></label>
+            <label>City Name:<input type="text" name="city"></label>
+            <label>State/Province:<input type="text" name="State" placeholder="Metro Manila"></label>
+            <label>Phone:<input type="text" name="phone" placeholder="(+639) "></label>
+            <label>Email Address:<input type="text" name="email" placeholder="rex@example.com "></label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Course Selection</legend>
+            <label><input type="radio" name="course" value="engineering"/> Engineering</label>
+            <label><input type="radio" name="course" value="cs"/> Computer Science</label>
+            <label><input type="radio" name="course" value="ba"/> Business Analytics</label>
+            <label><input type="radio" name="course" value="accountancy"/> Accountancy</label>
+            <label><input type="radio" name="course" value="it"/> Information Technology</label>
+            <label><input type="radio" name="course" value="hm"/> Hospitality Management</label>
+            <label><input type="radio" name="course" value="tm"/> Tourism Management</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Special Needs or Goals</legend>
+            <textarea name="goals" rows="5" placeholder="Please let us know if you have any specific goals,or interest:"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Agreement</legend>
+            <p>I hereby confirm that, to the best of my knowledge, all Information provided above is true, accurate, and complete</p>
+            <label>Signature:<input type="text" name="signature"></label>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </div>
+</body>
+</html>
